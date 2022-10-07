@@ -8,7 +8,7 @@
 >
 > They might or might not receive **context** at startup.
 
-> Have a number of **flows** that are have to run certain **actions** in a **pre-defined order**
+> Have a number of **flows** that have to run certain **actions** in a **pre-defined order**
 
 > Have the ability to **stop**, **restart** and **resume** a flow
 
