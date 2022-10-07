@@ -14,6 +14,13 @@
 
 > **Restrict multiple jobs** running for the same flow ( with a configurable **unique key** )
 
+> Trigger a flow either from an API call, either from scheduled job
+
+
+#### Naming:
+- Job -> 
+- Event -> Something that has happened
+- (Event) Listener -> An action that runs then an event happens
 
 ### Prerequisites:
 - Laravel 9
