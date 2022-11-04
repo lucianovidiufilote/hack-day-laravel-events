@@ -19,6 +19,8 @@
 
 #### Naming:
 - Job -> 
+  - Batchable: contains multiple regular jobs ( flow )
+  - Regular: a task that runs and does stuff
 - Event -> Something that has happened
 - (Event) Listener -> An action that runs then an event happens
 
