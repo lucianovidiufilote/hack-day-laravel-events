@@ -38,7 +38,7 @@
 - https://laravel.com/docs/9.x/queues
 - https://laravel.com/docs/9.x/scheduling
 
-
+Miro flowcharts: https://miro.com/app/board/uXjVPHcN7fk=/
 
 Example case implementation
 
