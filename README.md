@@ -35,3 +35,26 @@
 - https://laravel.com/docs/9.x/contracts
 - https://laravel.com/docs/9.x/queues
 - https://laravel.com/docs/9.x/scheduling
+
+
+
+Example case implementation
+
+Flow 1:
+1. Feed is added by the user in the controller
+2. Feed is saved
+3. Feed is validated   
+   1. If invalid -> message
+   2. If valid -> import_job
+
+
+Flow 2:
+1. Feed import hourly -> import_job
+
+
+import_job:
+1. Download
+2. Validate
+3. Detect settings
+4. Check
+5. Import

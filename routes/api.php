@@ -19,6 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/feed', [
+    FeedController::class,
+    'store'
+]);
+
 Route::get('/feed/{feed}', [
     FeedController::class,
     'update'

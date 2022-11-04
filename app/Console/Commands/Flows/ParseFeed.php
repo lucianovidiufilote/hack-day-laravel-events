@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands\Flows;
 
+use App\Jobs\Feed\Parse\FeedParseJob;
+use App\Models\Feed;
 use Illuminate\Console\Command;
 
 class ParseFeed extends Command
@@ -11,7 +13,7 @@ class ParseFeed extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'feed:parse';
 
     /**
      * The console command description.
@@ -27,6 +29,10 @@ class ParseFeed extends Command
      */
     public function handle()
     {
+        $feeds = Feed::all();
+
+        FeedParseJob::dispatch();
+
         return Command::SUCCESS;
     }
 }

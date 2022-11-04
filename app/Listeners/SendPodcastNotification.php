@@ -8,6 +8,15 @@ use Illuminate\Queue\InteractsWithQueue;
 
 class SendPodcastNotification implements ShouldQueue
 {
+    use InteractsWithQueue;
+
+    /**
+     * The number of times the queued listener may be attempted.
+     *
+     * @var int
+     */
+    public $tries = 5;
+
     /**
      * The name of the queue the job should be sent to.
      *
